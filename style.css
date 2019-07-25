@@ -1,0 +1,420 @@
+/****************** general ******************/
+*{
+    margin: 0;
+    padding: 0
+}
+body {
+    background-color: #CEA0AF;
+    font-family: 'Lato'
+}
+body, h1, p, button {
+    color: #2A2D35; /*black color*/
+}
+/****************** header ******************/
+
+/* Global menu */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    transform: translateY(-10px);
+}
+.nav-menu:hover{
+    background-color: #f9f9f9;
+}
+.nav-menu:hover .logo-wistia {
+    fill:#3EA9F5;
+    cursor: pointer;
+}
+/* Logo */
+.logo-wistia {
+    margin-left: 30px;
+    margin-top: 20px
+}
+
+/* Buttons */
+.buttons-menu {
+    margin-left: auto;
+    margin-right: 20px
+}
+.buttons-menu button {
+    background-color: white;
+    width: 110px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.buttons-menu button:hover {
+    transform: translateY(-4px);
+}
+#started-button{
+    margin-left: 20px;
+    color:white;
+    background-color: #3EA9F5;
+}
+
+#started-button:hover{
+    box-shadow: 0 5px #999;
+    cursor: pointer;
+}
+
+#login-button:hover{
+    box-shadow: 0 5px #999;
+    cursor: pointer;
+}
+
+
+/* Navigation menu */
+.menu-container {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px 10px 0px
+}
+.menu-container a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold
+}
+.menu-container li:nth-child(1) > a:hover {
+    color: #0691F2;
+}
+.menu-container li:nth-child(2) > a:hover {
+    color: #FE9886;
+}
+.menu-container li:nth-child(3) > a:hover {
+    color: #3AB16A;
+}
+.menu-container li:nth-child(4) > a:hover {
+    color: #437ED4;
+}
+
+/** drop down **/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 96vw;
+    background-color: #f9f9f9;
+    z-index: 1;
+    margin-left: -60px;
+    margin-top: 5px;
+    padding: 10px 10px 20px;
+  }
+  #dropdown:hover .dropdown-content { /*hover on dropdown will make a display: block on dropdown-content*/
+    display: block;
+  }
+  .dropdown-menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 10px 10px;
+  }
+  .drop-list {
+    list-style-type: none;
+    width: 200px;
+  }
+  .drop-list li {
+    margin-top: 1em;
+  }
+  .drop-list li:first-child{
+      color:#5b6b7f;
+      text-transform: uppercase
+  }
+/** drop down **/
+
+/****************** Main ******************/
+
+/************** Section 1 *****************/
+#video-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 0 10px;
+    height:520px
+}
+.text-vid{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 500px;
+    width: 600px;
+}
+.src-vid video{
+    height: 500px;
+    width: 600px;
+}
+
+#video-container span {
+    color: white
+}
+#video-container h1{
+    font-size: 45px;
+}
+#video-container button {
+    color: #2A2D35;  /*black color*/
+    background-color: white;
+    width: 170px;
+    height: 60px;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#video-container button:hover{
+    box-shadow: 0 5px #999;
+    transform: translateY(-4px);
+}
+/************** Section 2 *****************/
+#services {
+    display: flex;
+    justify-content: space-between;
+}
+.service-item {
+    flex-basis: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 20px 40px 20px;
+}
+.svg-service1{
+    width:55px;
+    height: 55px;
+    color: #3EA9F5
+}
+.svg-service2{
+    width:62px;
+    height: 62px;
+    color: #E7B8C7
+}
+.svg-service3{
+    width:55px;
+    height: 55px;
+    color: #FED24A
+}
+.service-item h3 {
+    color:white
+}
+.service-item a {
+    color: #2A2D35;
+}
+.service-item button{
+    background-color: transparent;
+    border: 2px solid white;
+    width: 170px;
+    height: 60px;
+    border-radius: 4px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.service-item button:hover{
+    box-shadow: 0 5px #999;
+    transform: translateY(-4px);
+    background-color: white;
+}
+
+#btn-service1:hover ~ .svg-service1{
+    fill:white;
+}
+
+#service1 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #FED24A;
+}
+
+#service2 {
+    background-color: #51C29F
+}
+#service3 {
+    background-color: #3EA9F5
+}
+/************** Section 3 *****************/
+#partners {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 10px 170px;
+    background-color: white
+}
+#partners p{
+    flex-basis: 100%;
+    color: #9CA8B7;
+    font-size: 20px;
+    padding: 0px 30px 0px;
+}
+#partners img{
+    width:100px;
+    height: 100px;
+    flex-basis: 100%
+}
+/************** Section 4 *****************/
+#features {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    height:500px;
+}
+#features img {
+    width: 350px;
+    height: 250px;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    padding: 10px 40px 10px
+}
+
+.fig-feature {
+    position: relative;
+    width: 350px;
+    height: 250px;
+  }
+  
+  .fig-feature:hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .img-brandwagon:hover:after {
+    background: rgba(62, 169, 245, 0.8);
+  }
+  .wistia-channels:hover:after {
+    background: rgba(81, 194, 159, 0.8);
+  }
+  .webinar:hover:after {
+    background: rgba(206, 160, 175, 0.8);
+  }
+
+/************** footer *****************/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2D35;
+}
+footer p {
+    color: white
+}
+footer h3 {
+    color: white
+}
+.term-service {
+    background-color: #EFEFEF;
+    text-align: center; 
+    font-size: 18px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.term-service p{
+    color: #2A2D35
+}
+.term-service a{
+    color:#5B6B7F
+}
+.wistia-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px 50px
+}
+#social-links {
+    padding: 0px 30px 0px;
+    border-right: 0.02px solid rgb(49, 48, 48);
+}
+#social-links a {
+    text-decoration: none;
+    color: #56BE8E
+}
+#social-links a:hover {
+    text-decoration: none;
+    text-decoration: underline;
+}
+#marketing h3{
+    font-size: 12px;
+    color: #9CA8B7;
+}
+#marketing ul{
+    list-style-type: none
+}
+#marketing li{
+    color: #F9F9F9;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#marketing li:last-child {
+   color: #3EA9F5;
+}
+
+#soapbox h3{
+    font-size: 12px;
+    color: #9CA8B7;
+}
+#soapbox ul{
+    list-style-type: none
+}
+#soapbox li{
+    color: #F9F9F9;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#soapbox li:last-child {
+   color: #3EA9F5;
+}
+
+#company h3{
+    font-size: 12px;
+    color: #9CA8B7;
+}
+#company ul{
+    list-style-type: none
+}
+#company li{
+    color: #F9F9F9;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#support h3{
+    font-size: 12px;
+    color: #9CA8B7;
+}
+#support ul{
+    list-style-type: none
+}
+#support li{
+    color: #F9F9F9;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.rights {
+    text-align: center; 
+    font-size: 18px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.rights *{
+    color: #5B6B7F
+}
